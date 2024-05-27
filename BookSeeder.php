@@ -62,8 +62,8 @@ class BookSeeder extends Seeder
                 'title'      => $bookTitle[mt_rand(0, array_key_last($bookTitle))],
                 'author'     => $faker->name(),
                 'publisher'  => $bookPublisher[mt_rand(0, array_key_last($bookTitle))],
-                'preview'    => $faker->dateTimeBetween('-3 years', 'now'),
-                'created_at' => $faker->dateTime('now'),
+                'review'     => $faker->baseText(),
+                'created_at' => $faker->dateTimeBetween('-3 years', 'now'),
                 'updated_at' => $faker->dateTime('now'),
             ]);
         }
